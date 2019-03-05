@@ -1,0 +1,2 @@
+script(src='js/scan.js')
+script(src='js/qr.js')

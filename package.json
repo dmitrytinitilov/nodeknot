@@ -1,0 +1,22 @@
+{
+  "name": "nodeknot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "dmitry tinitilov",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.1-alpha.3",
+    "mongodb": "^3.1.13",
+    "pug": "^2.0.3"
+  }
+}

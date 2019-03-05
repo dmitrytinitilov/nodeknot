@@ -1,0 +1,9 @@
+link(href='/css/system.css' rel='stylesheet')
+link(href='/css/style.css' rel='stylesheet')
+script(type="text/javascript" src="dist/instascan.js")
+script(type="text/javascript" src="js/qrcode.js")
+meta(name='viewport' content ='width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no')
+title=TenTen
+
+
+
