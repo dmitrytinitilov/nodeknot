@@ -18,22 +18,6 @@ module.exports = function(app, db) {
 	
 	})
 
-	app.get('/api/get_posts',async function(req,res){
-		
-		try {
-
-			var blogposts_collection = db.collection("blogposts");
-
-			blogposts = await blogposts_collection.find({}).toArray();
-
-			res.end(JSON.stringify(blogposts));
-		} catch(e) {
-			console.log(e);
-			res.end('error');
-		}
-	
-	})
-
 	app.get('/api/logout',async function(req,res){
 	
 		try {
@@ -130,6 +114,22 @@ module.exports = function(app, db) {
 		} catch(e){
 			console.log(e);
 			res.end('{result:error}');
+		}
+	
+	})
+
+	app.get('/api/get_posts',async function(req,res){
+		
+		try {
+
+			var blogposts_collection = db.collection("blogposts");
+
+			blogposts = await blogposts_collection.find({}).toArray();
+
+			res.end(JSON.stringify(blogposts));
+		} catch(e) {
+			console.log(e);
+			res.end('error');
 		}
 	
 	})
