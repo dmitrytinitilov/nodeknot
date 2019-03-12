@@ -143,7 +143,7 @@ module.exports = function(app, db) {
 			let post_name  = req.body.post_name;
 			let post_description = req.body.post_description;
 
-			await blogposts.insertOne({login:login,password:crypto_password})
+			await blogposts.insertOne({post_name:post_name,post_description:post_description})
 
 			res.end('{result:ok}');
 		} catch(e) {
